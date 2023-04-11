@@ -1,0 +1,36 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("imgs/bark.jpg");
+
+}
+
+
+.top{
+    
+    width: 506px;
+    height: 100px;
+    background-color: rgb(73, 70, 70);
+    border: none;
+}
+
+.buttons{
+    display:grid;
+    grid-template-columns: repeat(3, 152px [col-start]);
+    grid-template-rows: repeat(4, 100px [row-start]);
+    color:cyan;
+    justify-items: center;
+    align-items: center;
+    border:25px solid rgb(230, 243, 44);
+    background-color: rgb(23, 122, 214);
+}
+
+
+div{
+    border: 10px solid blue;
+}
+
+
+
