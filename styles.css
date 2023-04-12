@@ -27,11 +27,13 @@ body{
     background-color: rgb(23, 122, 214);
     width: 606px;
     height: 450px;
+    text-align: center;
 }
 
 
-div{
+button{
     border: 5px solid black;
-    width:50px;
+    width:75px;
+    height: 50px;
     font-size: larger;
 }
