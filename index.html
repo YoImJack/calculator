@@ -5,6 +5,7 @@
       <title>Calculator</title>
       <link rel="stylesheet" href="styles.css">
       <script src="script.js"></script>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   </head>
   <body>
     <h2>Calculator</h2>
@@ -12,23 +13,23 @@
       Output will show up here
       <p id="calculations"></p>
     </div>
-    <div id="buttons">   <!-- still need a addition, subtraction, divison, mulitplication, and enter button-->
-      <button class="one" onclick="results(1)">1</button>
-      <button class="two" onclick="results(2)">2</button>
-      <button class="three" onclick="results(3)">3</button>
-      <button class="subtraction" onclick="results(`-`)">-</button>
-      <button class="four" onclick="results(4)">4</button>
-      <button class="five" onclick="results(5)">5</button>
-      <button class="six" onclick="results(6)">6</button>
-      <button class="addition" onclick="results(`+`)">+</button>
-      <button class="seven" onclick="results(7)">7</button>
-      <button class="eight" onclick="results(8)">8</button>
-      <button class="nine" onclick="results(9)">9</button>
-      <button class="divison" onclick="results(`/`)">/</button>
-      <button class="zero" onclick="results(0)">0</button>
-      <button class="enter">Enter</button>
-      <button class="clear" onclick="clearResults()">Clear</button>
-      <button class="mulitplication" onclick="results(`*`)">*</button>
+    <div class="buttons">  
+      <button id="one" onclick="results(1)">1</button>
+      <button id="two" onclick="results(2)">2</button>
+      <button id="three" onclick="results(3)">3</button>
+      <button id="subtraction" onclick="results(`-`); setOperator(`-`)">-</button>
+      <button id="four" onclick="results(4)">4</button>
+      <button id="five" onclick="results(5)">5</button>
+      <button id="six" onclick="results(6)">6</button>
+      <button id="addition" onclick="results(`+`); setOperator(`+`)">+</button>
+      <button id="seven" onclick="results(7)">7</button>
+      <button id="eight" onclick="results(8)">8</button>
+      <button id="nine" onclick="results(9)">9</button>
+      <button id="divison" onclick="results(`/`); setOperator(`/`)">/</button>
+      <button id="zero" onclick="results(0)">0</button>
+      <button id="enter" onclick="enterButton()">Enter</button>
+      <button id="clear" onclick="clearResults()">Clear</button>
+      <button id="mulitplication" onclick="results(`*`); setOperator(`*`)">*</button>
     </div>
 
   </body>
